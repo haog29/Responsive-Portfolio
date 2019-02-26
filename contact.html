@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+       * {
+      box-sizing: border-box;
+    }
+ .name {
+    background-color: teal;
+    color: beige;
+    margin-left: 34px;
+    padding: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+    nav {
+      background-color: gainsboro;
+    
+
+    }
+
+    nav ul a {
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      font-size: 1rem;
+      color: rgb(77, 76, 76);
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+
+    html, body {
+      margin:0;
+   padding:0;
+   height:100%;
+    min-height: 100vh;
+    flex-direction: column;
+      background-color: rgb(170, 169, 169);
+   padding-bottom:60px; 
+
+    }
+
+   
+
+    #container {
+      height: 561px;
+    width: 394px;
+    background-color: beige;
+    margin: 30px;
+    margin-bottom: 30px;
+    }
+
+    #message {
+      background-color: white;
+      overflow: auto;
+
+    }
+    #name1,#email {
+      width:100%;
+    }
+
+  
+    .col .row {
+
+      margin-left: -0.75rem;
+      margin-right: 0.25rem;
+      margin-top: 3rem;
+     
+      
+    }
+
+  label, textarea {
+    color: #070707;
+      font-size: 1rem;
+      cursor: text;
+  }
+    input[type=submit] {
+      background-color: teal;
+    color: white;
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+    margin: -28px;
+    margin-left: -1px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #7e7e7e;
+}
+.page-footer {
+  background-color: rgb(87, 86, 86);
+    height: 62px;
+    width: 100vw;
+    border-top: 5px solid green;
+    text-align: center;
+}
+#mainCon {
+  height: 100%;
+}
+
+
+#footer {
+  clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 70px;
+}
+ 
+      
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./index.html" class="name">Harley Gagaring</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div id="mainCon">
+  <div id="container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class=" col s12">
+            <label for="name1">Name:
+              <input id="name1" name= "name" type="textarea">
+            </label>
+          </div>
+        </div>
+          <div class="row">
+            <div class= "col s12">
+              <label for="email">Email:
+                <input id="email" name = "email" type="textarea">
+              </label>
+            </div>
+          </div>
+        
+
+        <div class="row">
+          <div class="col s12">
+            <label for="text">message:
+             
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </label>
+          </div>
+        </div>
+<div class="row">
+    <div class="col s12">
+    <input type="submit" value="Submit">
+    </div>
+</div>
+
+    </div>
+  
+
+  
+     
+</div>
+</div>
+
+
+
+<div id="footer">
+    <footer class="page-footer">     
+            
+                  
+        © 2014 Copyright Text
+     
+      
+    </footer>
+    </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+
+
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(160, 160, 160);
+    }
+
+    header {
+      background-color: rgb(229, 229, 231);
+      padding: 1px;
+      text-align: center;
+      font-size: 21px;
+      color: white
+    }
+    nav {
+            background-color: gainsboro;
+
+        }
+
+    nav ul a {
+
+        -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            font-size: 1rem;
+            color: rgb(77, 76, 76);
+            display: block;
+            padding: 0 15px;
+            cursor: pointer;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      float: left;
+      padding: 50px;
+
+    }
+
+    .active {
+        background-color: teal;
+            color: beige;
+            margin-left: 34px;
+            padding: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+    }
+
+    nav li {
+      float: right;
+    }
+
+    nav li a {
+      display: block;
+      color: #1d1616;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    h1 {
+      border-bottom: solid black;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    section {
+      margin: 27px 20px 100px 20px;
+
+
+    }
+
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    article {
+
+      padding: 33px;
+      width: 34%;
+      background-color: beige;
+      height: 679px;;
+
+    }
+
+
+
+
+    .bt21 {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .bt21 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .bt21 .btn  {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-171%, 355%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+    .btn1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(97%, 355%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+    
+    .btn2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-190%, 903%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+    .btn3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(79%, 903%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+    
+    .btn4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-167%, 1470%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+     
+    .btn5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(117%, 1470%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+
+    .bt21 .btn .btn1 .btn2 .btn3 .btn4 .btn5 :hover {
+      background-color: black;
+    }
+
+
+    footer {
+      background-color: rgb(62, 44, 165);
+      padding: 25px;
+      text-align: center;
+      border: solid #1d1616;
+
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      nav,
+      footer, .btn1, .btn2, .btn3, .btn4, .btn5 {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="../index.html">About Me</a></li>
+
+      <li style="float:left"><a class="active" href="https://haog29.github.io/Basic-Portfolio/">Harley Gagaring</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <section>
+
+
+      <article>
+
+        <h1>Portfolio</h1>
+
+        <div class="bt21">
+          <div class="row">
+            <img src="shooky.jpg" alt="shooky" style="width:50%">
+            <button class="btn">shooky</button>
+          </div>
+
+          <div class="row">
+            <img src="tata.jpg" alt="tata" style="width:50%">
+            <button class="btn1">tata</button>
+          </div>
+          <div class="row">
+            <img src="koya.jpg" alt="koya" style="width:50%">
+            <button class="btn2">koya</button>
+          </div>
+          <div class="row">
+              <img src="mang.jpg" alt="mang" style="width:50%">
+              <button class="btn3">mang</button>
+            </div>
+
+            <div class="row">
+                <img src="chimmy.jpg" alt="chimmy" style="width:50%">
+                <button class="btn4">chimmy</button>
+              </div>
+              <div class="row">
+                  <img src="rj.jpg" alt="Rj" style="width:50%">
+                  <button class="btn5">Rj</button>
+                </div>
+      </article>
+
+
+
+    </section>
+  </div>
+
+  <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .name {
+      background-color: teal;
+      color: beige;
+      margin-left: 34px;
+    padding: 24px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    nav {
+      background-color: gainsboro;
+
+    }
+
+    nav ul a {
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      font-size: 1rem;
+      color: rgb(77, 76, 76);
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+
+    body {
+      background-color: beige;
+
+    }
+
+    footer {
+      background-color: darkgray;
+      height: 60px;
+      width: 100vw;
+      border-top: 5px solid green;
+    }
+
+    .content {
+      background-color: darkgray;
+      width: 511px;
+      height: 351px;
+      padding: 20px;
+      margin: 35px;
+      margin-bottom: 287px;
+
+    }
+
+    h6 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-bottom: 1px solid black;
+      padding: 3px;
+      color: teal;
+
+    }
+
+    img {
+      border-style: none;
+      height: 132px;
+      width: 103px;
+      padding-top: 18px;
+    }
+
+    p {
+      float: right;
+      width: 359px;
+      padding-top: 19px;
+
+
+    }
+
+    .part {
+      width: 460px;
+
+    }
+
+    /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+ nav, .container, body {
+    background-color: blue;
+
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+ nav, #container, body {
+    background-color: olive;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./index.html" class="name">Harley Gagaring</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="container">
+    <div class="content">
+      <h6>About</h6>
+      <img src="./assets/images/hao.jpg" id="conImg" alt="Harley">
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Suscipit perferendis quidem, eum, provident iure hic,
+        amet similique praesentium omnis eligendi dolor illum dignissimos
+        fuga reiciendis autem! Ipsum facilis delectus ad.</p>
+
+
+      <article>
+        <p class="part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi,
+          architecto blanditiis aliquam adipisci excepturi ab ex cumque soluta aspernatur nulla,
+          debitis corrupti nam! Nostrum ad repellat accusantium est maiores!</p>
+      </article>
+    </div>
+
+  </div>
+
+  <footer></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
