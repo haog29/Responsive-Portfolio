@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
 
   <title>Portfolio</title>
-
+  <link rel="stylesheet" href="../Responsive-Portfolio/assets/css/reset.css">
   <style>
     * {
       box-sizing: border-box;
@@ -45,10 +47,12 @@
     }
 
     img {
+      max-width: 100%;
       height: 100px;
       width: 100px;
       float: left;
       padding: 50px;
+  
 
     }
 
@@ -81,8 +85,9 @@
     }
 
     h1 {
-      border-bottom: solid black;
-      font-family: 'Courier New', Courier, monospace;
+      color: teal;
+      border-bottom: 1px solid black;
+      font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
     section {
@@ -132,10 +137,11 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+       
     }
 
     .btn1 {
+      display: block;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -147,11 +153,12 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+       
     }
 
     
     .btn2 {
+      display: block;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -163,10 +170,11 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+      
     }
 
     .btn3 {
+      display: block;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -178,7 +186,7 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+     
     }
 
     
@@ -194,7 +202,7 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+ 
     }
 
      
@@ -210,33 +218,68 @@
       padding: 12px 24px;
       border: none;
       cursor: pointer;
-      border-radius: 5px
+
     }
 
 
     .bt21 .btn .btn1 .btn2 .btn3 .btn4 .btn5 :hover {
       background-color: black;
     }
+    .page-footer {
+            background-color: rgb(87, 86, 86);
+            height: 62px;
+            width: 100vw;
+            border-top: 5px solid green;
+            text-align: center;
+            color: white;
+            padding: 15px;
+        }
+
+        #footer {
+            clear: both;
+            position: relative;
+            height: 40px;
+            margin-top: 30px;
+        }
 
 
-    footer {
-      background-color: rgb(62, 44, 165);
-      padding: 25px;
-      text-align: center;
-      border: solid #1d1616;
+   
+        @media (max-width: 640px) {
+  nav,body, footer {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  article {
 
+    width: 100%;  
+ }
+ img {
+   width: 100%;
+   height: auto ;
+ }
+}
+@media (max-width: 768px) {
+  nav,body,footer {
+    width: 100%;
+    height: auto;
+  }
+  article {
 
-    }
+width: 100%;  
+}
+}
+@media (max-width: 980px) {
+  nav, body, footer {
+    width: 100%;
+    height: auto;
+  }
+  article {
 
+width: 100%;  
+}
 
-    @media (max-width: 600px) {
-
-      nav,
-      footer, .btn1, .btn2, .btn3, .btn4, .btn5 {
-        width: 100%;
-        height: auto;
-      }
-    }
+}
   </style>
 </head>
 
@@ -245,10 +288,10 @@
   <nav>
     <ul>
       <li><a href="./contact.html">Contact</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="../index.html">About Me</a></li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./index.html">About Me</a></li>
 
-      <li style="float:left"><a class="active" href="https://haog29.github.io/Basic-Portfolio/">Harley Gagaring</a></li>
+      <li style="float:left"><a class="active" href="./index.html">Harley Gagaring</a></li>
     </ul>
   </nav>
 
@@ -262,30 +305,30 @@
 
         <div class="bt21">
           <div class="row">
-            <img src="shooky.jpg" alt="shooky" style="width:50%">
-            <button class="btn">shooky</button>
+            <img src="../Responsive-Portfolio/assets/images/shooky.jpg" alt="shooky"   style="width:50%">
+            <button class="btn" style="background-color:teal">shooky</button>
           </div>
 
           <div class="row">
-            <img src="tata.jpg" alt="tata" style="width:50%">
-            <button class="btn1">tata</button>
+            <img src="../Responsive-Portfolio/assets/images/tata.jpg" alt="tata"   style="width:50%">
+            <button class="btn1"  style="background-color:teal">tata</button>
           </div>
           <div class="row">
-            <img src="koya.jpg" alt="koya" style="width:50%">
-            <button class="btn2">koya</button>
+            <img src="../Responsive-Portfolio/assets/images/koya.jpg" alt="koya"   style="width:50%">
+            <button class="btn2" style="background-color:teal">koya</button>
           </div>
           <div class="row">
-              <img src="mang.jpg" alt="mang" style="width:50%">
-              <button class="btn3">mang</button>
+              <img src="../Responsive-Portfolio/assets/images/mang.jpg" alt="mang"   style="width:50%">
+              <button class="btn3" style="background-color:teal">mang</button>
             </div>
 
             <div class="row">
-                <img src="chimmy.jpg" alt="chimmy" style="width:50%">
-                <button class="btn4">chimmy</button>
+                <img src="../Responsive-Portfolio/assets/images/chimmy.jpg" alt="chimmy"   style="width:50%">
+                <button class="btn4" style="background-color:teal">chimmy</button>
               </div>
               <div class="row">
-                  <img src="rj.jpg" alt="Rj" style="width:50%">
-                  <button class="btn5">Rj</button>
+                  <img src="../Responsive-Portfolio/assets/images/rj.jpg" alt="Rj"   style="width:50%">
+                  <button class="btn5" style="background-color:teal">Rj</button>
                 </div>
       </article>
 
@@ -293,9 +336,15 @@
 
     </section>
   </div>
+  <div id="footer">
+    <footer class="page-footer">
 
-  <footer></footer>
 
+        © 2014 Copyright Text
+
+
+    </footer>
+</div>
 </body>
 
 </html>

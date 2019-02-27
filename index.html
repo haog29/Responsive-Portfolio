@@ -1,145 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Harley </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="true">
+<!-- <link rel="stylesheet" href="../Responsive-Portfolio/assets/css/reset.css"> -->
+ 
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+body {
+ 
+  background-color: beige
+}
 
-    .name {
-      background-color: teal;
+.page-footer {
+  background-color: rgb(87, 86, 86);
+    height: 60px;
+    width: 100vw;
+    border-top: 5px solid green;
+    text-align: center;
+    color:  white;
+    padding: 15px;
+}
+
+
+#mainCon {
+  clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 70px;
+}
+
+
+
+nav {
+
+    width: 100%;
+    height: 68px;
+    background-color: gainsboro;
+    margin-top: -7px;
+    
+
+}
+img {
+    height :100px;
+    width : 100px;
+    float: left;
+    padding : 50px;
+
+}
+#img1 {
+    height :300px;
+    width : 300px;
+    float: right;
+    padding: 41px;
+    margin: -38px;
+
+}
+.active {
+    background-color: teal;
       color: beige;
-      margin-left: 34px;
+      margin-left: 25px;
     padding: 24px;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
+nav ul {
 
-    nav {
-      background-color: gainsboro;
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 
-    }
-
-    nav ul a {
-      -webkit-transition: background-color .3s;
-      transition: background-color .3s;
-      font-size: 1rem;
-      color: rgb(77, 76, 76);
+}
+nav li {
+    float:right;
+}
+nav li a {
       display: block;
-      padding: 0 15px;
-      cursor: pointer;
+      color: #1d1616;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
 
-    body {
-      background-color: beige;
-
+    h1{
+        color: teal;
+      border-bottom: solid black;
+      font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    h3{
+        color: rgb(255, 255, 255);
+      font-family:Georgia, 'Times New Roman', Times, serif
     }
 
-    footer {
-      background-color: darkgray;
-      height: 60px;
-      width: 100vw;
-      border-top: 5px solid green;
-    }
+article {
+    float: left;
+    padding: 33px;
+    width: 50%;
+    background-color: #dfdfdf;
+    height: 335px;
+}
+section {
+  margin: 27px 20px 100px 20px;
+ 
 
-    .content {
-      background-color: darkgray;
-      width: 511px;
-      height: 351px;
-      padding: 20px;
-      margin: 35px;
-      margin-bottom: 287px;
-
-    }
-
-    h6 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      border-bottom: 1px solid black;
-      padding: 3px;
-      color: teal;
-
-    }
-
-    img {
-      border-style: none;
-      height: 132px;
-      width: 103px;
-      padding-top: 18px;
-    }
-
-    p {
-      float: right;
-      width: 359px;
-      padding-top: 19px;
+}
 
 
-    }
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-    .part {
-      width: 460px;
+aside {
+    float:right;
+    float: left;
+    padding: 33px;
+    width: 50%;
+    background-color: #6b6b6b;
+    height: 335px;
+    margin-bottom: 100px;
 
-    }
+}
 
-    /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
- nav, .container, body {
-    background-color: blue;
 
+
+
+#bio-image {
+    padding:10px;
+}
+
+
+@media (max-width: 640px) {
+  nav, article, aside, footer {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  nav, article, aside, footer {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 980px) {
+  nav, article, aside, footer {
+    width: 100%;
+    height: auto;
   }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
- nav, #container, body {
-    background-color: olive;
-  }
-}
-  </style>
+</style>
 </head>
-
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="./index.html" class="name">Harley Gagaring</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div id="container">
-    <div class="content">
-      <h6>About</h6>
-      <img src="./assets/images/hao.jpg" id="conImg" alt="Harley">
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Suscipit perferendis quidem, eum, provident iure hic,
-        amet similique praesentium omnis eligendi dolor illum dignissimos
-        fuga reiciendis autem! Ipsum facilis delectus ad.</p>
 
 
-      <article>
-        <p class="part">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi,
-          architecto blanditiis aliquam adipisci excepturi ab ex cumque soluta aspernatur nulla,
-          debitis corrupti nam! Nostrum ad repellat accusantium est maiores!</p>
-      </article>
-    </div>
+<nav>
+  <ul>
+    <li><a href="./contact.html">Contact</a></li>
+    <li><a href="./portfolio.html">Portfolio</a></li>
+    <li><a href="./index.html">About Me</a></li>
+   
+    <li style="float:left" ><a class="active" href="#home">Harley Gagaring</a></li>
+  </ul>
+</nav>
 
-  </div>
 
-  <footer></footer>
+<div id="mainCon">
+<div id = "container">
+<section>
+  
+ 
+  <article>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <h1>About</h1>
+    <img id="bio-image" src="./assets/images/hao.jpg" alt="Harley">
+    <h4>Visit my website to know more about me : 
+        <a href="http://www.haoppydays.wixsite.com/comein">www.haoppydays,wixsite.com/comein</a></h4>
+  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Alias facere harum repellendus nostrum a recusandae blanditiis in rerum,
+     deleniti voluptates fuga quisquam quam, 
+    magni nobis commodi quo tempore dicta amet? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Repudiandae totam explicabo eos blanditiis doloremque voluptatibus nulla, 
+    voluptas quibusdam inventore iusto animi molestiae aspernatur rem est vero asperiores. Laudantium, eveniet praesentium? </p>
+
+  </article>
+  <aside>
+     <h3>Check portfolio for some BT21!
+        <img id="img1" src="bt21.jpg" alt="Bt21">
+     </h3>
+        <p> Aside ipsum dolor sit amet consectetur adipisicing elit. 
+            Adipisci tempora eligendi repudiandae quaerat ad odit autem sed deleniti veniam, 
+            ullam reiciendis cupiditate doloremque fuga illo quibusdam molestias 
+            voluptate iure cum!</p>
+    </aside>
+  
+</section>
+</div>
+<div id="footer">
+    <footer class="page-footer">
+
+
+        © 2014 Copyright Text
+
+
+    </footer>
+</div>
+</div>
+
 </body>
-
 </html>
+<!--  -->
